@@ -1,1 +1,3 @@
 # Vuodenajat
+
+Yksinkertaiset nettisivut pikselitaiteelle.
