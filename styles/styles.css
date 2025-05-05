@@ -260,7 +260,6 @@ footer p {
     margin: 0;
 }
 
-/* Add these new styles for centered content */
 .centered-content {
     display: flex;
     align-items: center;
@@ -279,7 +278,6 @@ footer p {
     line-height: 1.6;
 }
 
-/* Update existing content-wrapper styles if needed */
 .content-wrapper {
     flex: 1;
     margin-top: 160px;
