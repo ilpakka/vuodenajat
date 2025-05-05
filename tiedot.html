@@ -12,33 +12,37 @@
 
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-
     <title>Vuodenajat</title>
 </head>
 
 <body>
     <header>
-        <h1>
-            Lisätietoa
-        </h1>
+        <div class="header-content">
+            <h1 data-fi="Lisätietoa" data-quenya="Ista">
+                Lisätietoa
+            </h1>
 
-        <div class="nav-container">
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <nav class="nav-menu">
-                <a href="index.html">Etusivu</a>
-                <a href="kuvat.html">Kuvat</a>
-                <a href="tiedot.html">Lisätietoa</a>
-            </nav>
+            <div class="nav-container">
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav-menu">
+                    <a href="index.html" data-fi="Etusivu" data-quenya="Mélamar">Etusivu</a>
+                    <a href="kuvat.html" data-fi="Kuvat" data-quenya="Calta">Kuvat</a>
+                    <a href="tiedot.html" data-fi="Lisätietoa" data-quenya="Ista">Lisätietoa</a>
+                    <a href="#" id="languageToggle" class="language-toggle" aria-label="Vaihda kieli">
+                        <span class="language-text" data-fi="Quenya" data-quenya="Suomeksi">Quenya</span>
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
 
     <div class="content-wrapper centered-content">
-        <p class="info-text">
+        <p class="info-text" data-fi="Tämä sivu on toteutettu vastaamaan kurssin nettisivutehtävän vaatimuksia." data-quenya="Sínen i anda nyarnë metta ar taina andaurenya na quanta.">
             Tämä sivu on toteutettu vastaamaan kurssin nettisivutehtävän vaatimuksia.
         </p>
     </div>
@@ -50,6 +54,7 @@
     </footer>
 
     <script src="scripts/menu.js"></script>
+    <script src="scripts/language.js"></script>
 </body>
 
 </html>
