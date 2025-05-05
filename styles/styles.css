@@ -58,18 +58,6 @@ body {
 
 .slide.active {
     opacity: 1;
-    animation: zoomEffect 20s ease-in-out infinite alternate;
-}
-
-@keyframes zoomEffect {
-    0% {
-        transform: scale(1);
-        background-position: center;
-    }
-    100% {
-        transform: scale(1.1);
-        background-position: center 30%;
-    }
 }
 
 /* Header styles */
@@ -114,8 +102,6 @@ h1 {
 
 .language-toggle:hover {
     color: #cccccc;
-    border-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
 }
 
 /* Navigation styles */
@@ -335,3 +321,13 @@ footer p {
 .gallery-item:hover .gallery-caption {
     transform: translateY(0);
 }
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
