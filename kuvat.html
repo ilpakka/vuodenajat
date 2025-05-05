@@ -19,22 +19,27 @@
 
 <body>
     <header>
-        <h1>
-            Kuvat
-        </h1>
+        <div class="header-content">
+            <h1 data-fi="Kuvat" data-quenya="Calta">
+                Kuvat
+            </h1>
 
-        <div class="nav-container">
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <nav class="nav-menu">
-                <a href="index.html">Etusivu</a>
-                <a href="kuvat.html">Kuvat</a>
-                <a href="tiedot.html">Lisätietoa</a>
-            </nav>
+            <div class="nav-container">
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav-menu">
+                    <a href="index.html" data-fi="Etusivu" data-quenya="Mélamar">Etusivu</a>
+                    <a href="kuvat.html" data-fi="Kuvat" data-quenya="Calta">Kuvat</a>
+                    <a href="tiedot.html" data-fi="Lisätietoa" data-quenya="Ista">Lisätietoa</a>
+                    <a href="#" id="languageToggle" class="language-toggle" aria-label="Vaihda kieli">
+                        <span class="language-text" data-fi="Quenya" data-quenya="Suomeksi">Quenya</span>
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -42,19 +47,19 @@
         <div class="gallery">
             <div class="gallery-item">
                 <img src="assets/vuodenajat/kevät.png" alt="Kevät" loading="lazy">
-                <div class="caption">Kevät</div>
+                <div class="caption" data-fi="Kevät" data-quenya="Tuilë">Kevät</div>
             </div>
             <div class="gallery-item">
                 <img src="assets/vuodenajat/kesä.png" alt="Kesä" loading="lazy">
-                <div class="caption">Kesä</div>
+                <div class="caption" data-fi="Kesä" data-quenya="Ellairë">Kesä</div>
             </div>
             <div class="gallery-item">
                 <img src="assets/vuodenajat/syksy.png" alt="Syksy" loading="lazy">
-                <div class="caption">Syksy</div>
+                <div class="caption" data-fi="Syksy" data-quenya="Yávië">Syksy</div>
             </div>
             <div class="gallery-item">
                 <img src="assets/vuodenajat/talvi.png" alt="Talvi" loading="lazy">
-                <div class="caption">Talvi</div>
+                <div class="caption" data-fi="Talvi" data-quenya="Hríve">Talvi</div>
             </div>
         </div>
     </div>
@@ -74,6 +79,7 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/gallery.js"></script>
+    <script src="scripts/language.js"></script>
 </body>
 
 </html>
