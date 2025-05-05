@@ -54,22 +54,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: opacity 3.5s ease-in-out;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.slide.active {
+    opacity: 1;
     animation: zoomEffect 20s ease-in-out infinite alternate;
 }
 
 @keyframes zoomEffect {
     0% {
         transform: scale(1);
-        background-position: center;
     }
     100% {
         transform: scale(1.1);
-        background-position: center 30%;
     }
-}
-
-.slide.active {
-    opacity: 1;
 }
 
 /* Header styles */
