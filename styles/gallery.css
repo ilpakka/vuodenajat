@@ -15,11 +15,13 @@
     padding: 1rem;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .gallery-item:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item img {
@@ -27,6 +29,11 @@
     height: auto;
     display: block;
     border-radius: 4px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 .caption {
@@ -34,6 +41,11 @@
     padding: 0.5rem 0 0;
     color: white;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    color: #cccccc;
 }
 
 /* Modal Styles */
@@ -47,6 +59,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .modal.active {
@@ -54,12 +68,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 1;
 }
 
 .modal-content {
     max-width: 90%;
     max-height: 80vh;
     object-fit: contain;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+    transform: scale(1);
 }
 
 .modal-caption {
@@ -67,6 +88,14 @@
     text-align: center;
     padding: 1rem 0;
     font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.modal.active .modal-caption {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .close-button {
@@ -77,11 +106,19 @@
     font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+.modal.active .close-button {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 .close-button:hover {
     color: #cccccc;
+    transform: rotate(90deg);
 }
 
 /* Responsive adjustments */
